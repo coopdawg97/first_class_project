@@ -1,9 +1,259 @@
-h1 {
-    color:#00cc00;
+/* ================ GLOBAL STYLES =================== */
+ 
+ @import url(https://fonts.googleapis.com/css?family=Lora|Lobster|Bree+Serif);
+ 
+html, body {
+      width:100%;
+      height:100%;
+      margin:0px;
+      padding:0px;
 }
+
+body {
+     background-color:#F1F1F1;
+     font-family:'Source Sans Pro', Trebuchet MS, sans-serif;
+     /*font-family: 'Lora', serif;*/
+     /*font-family: 'Lobster', cursive;*/
+     /*font-family: 'Bree Serif', serif;*/
+     font-size:16px;
+     /*font-weight:700;*/
+     color:#000000 !important;
+}
+ 
+body {
+     color:#FFFFFF;
+}
+
+h1, h2, h3, h4 {
+     margin:0px;
+     padding:0px;
+     color:#8DC63F; /* THE COLOR IS GRANNY SMITH APPLE GREEN */
+     font-family: 'Lobster', serif;
+}
+
 p {
-    color:#0000ff;
+     line-height:125%;
+     margin:15px 0px;
+     font-family: 'Bree Serif', serif;
 }
-h2 {
-    color:#ff00ff;
+
+b, strong {
+     color:#8DC63F;
 }
+
+a {
+   color:#8DC63F;
+   text-decoration:none;
+   transition:background 0.6s linear 0s, color 0.6s linear 0s;
+}
+
+a:hover {
+     color:#FF7900;
+}
+
+.mainBody {
+     overflow:hidden;
+     margin:20px auto; /* THE MARGIN AUTO HAS TO BE USED WITH WIDTH */
+     width:1200px;
+}
+
+ 
+/* ==================== HEADER STYLES =================== */
+
+header {
+     background-color:#FFFFFF;
+}
+
+#headerBlock {
+     padding:20px 0px;
+}
+
+#logo a {
+     color:#FF7900; /* SECONDARY COLOR */
+}
+
+#logo a:hover {
+     color:#8DC63F; /* APPLE GREEN */
+}
+
+/* ----------------- MENU NAVIGATION ----------------- */
+
+#menu {
+     position:absolute;
+     top:20px;
+     right:20px;
+}
+
+#menu ul {
+     display:inline-block;
+}
+
+#menu ul li {
+     display:inline;
+     float:left;
+     text-align:center;
+     margin:0px 10px;
+}
+
+.currentPage {
+     color:#FF7900;
+}
+
+
+
+/*
+===================================================
+BANNER STYLES BY ROGER AND DAMON 12.9.2015
+===================================================
+*/
+ 
+ #banner {
+      overflow:hidden;
+      padding:100px 0px;
+      border-top:3px solid #8DC63F;
+      background-size:cover;
+      background:url(../images/banner-home-image.jpg) no-repeat center center #FF7900;
+ }
+ 
+ /* #bannerAbout {*/
+ /*     overflow:hidden;*/
+ /*     padding:60px 0px;*/
+ /*     border-top:3px solid #8DC63F;*/
+ /*     background-size:200% 200%;*/
+ /*     -webkit-background-size:100% 100%;*/
+ /*     background:url() no-repeat center center #FF7900;*/
+ /*}*/
+ 
+ .bannerText {
+      color:#FFFFFF;
+      font-size:8.2em;
+      /*text-align:center;*/
+      text-shadow:7px 7px 10px #000000;
+ }
+ 
+ /* ==== MAIN SECTION STYLES | INCLUDING COLUMNS ===== */
+ 
+ .columnA, .columnB, .columnC {
+      width:384px;
+ }
+
+ .columnA, .columnB {
+      float:left;
+      margin-right:24px;
+ } 
+ 
+ .columnC {
+      float:left;
+ }
+ 
+ 
+ .columnA h2, .columnB h2, .columnC h2 {
+      font-size:3.5em;
+      font-weight:700;
+      text-align:center;
+      margin:15px 0px;
+ }
+ 
+  .columnA p, .columnB p, .columnC p {
+     padding:0px;
+     text-align:justify;
+ }
+ 
+ .column span {
+     background-color:#8DC63F;
+     color:#FFFFFF;
+     display:block;
+     font-size:1.75em;
+     font-weight:600;
+     margin:0px 0px 15px 0px;
+     padding:15px;
+     text-align:center;
+     text-transform:uppercase;
+ }
+ 
+
+ 
+ 
+ 
+ 
+
+/* ========== STANDARD STYLES ========== */
+ 
+ 
+/*------------- BUTTON STYLES ------------ */
+ 
+a.button {
+     display:inline-block;
+     padding:10px 18px;
+     background-color:#8DC63F;
+     text-transform:uppercase;
+     font-weight:800;
+     font-size:1.2em;
+     color:#FFFFFF;
+     border-radius:4px;
+     margin:10px 0px;
+}
+
+a.button:hover {
+     background-color:#FF7900;
+     color:#FFFFFF;
+}
+
+.button {
+     font-family: 'Lora', serif;
+}
+
+ .center {
+      text-align:center;
+ }
+ 
+ /* ========= ABOUT ME STYLES SECTION ========== */
+
+#aboutMe {
+     margin:25px 0px;
+} 
+ 
+ .aside-home-left {
+      width:384px;
+      float:left;
+      margin-right:24px;
+ }
+ 
+ .article-home-right p {
+      text-align:justify;
+ }
+ 
+ 
+ /*FOOTER SECTION | FOOTER STYLES*/
+ 
+ #copyright {
+      overflow:hidden;
+      padding:30px 0px;
+      border-top:3px dotted #8DC63F;
+      background-color:#e7f3d6;
+      display:block;
+      text-align:center;
+ }
+ 
+ 
+ /*------------- SOCIAL MEDIA STYLES -------------- */
+ 
+ .fa {
+      background-color:rgb(141, 198, 63);
+      border:4px solid #FFFFFF;
+      border-radius:100%;
+      font-size:2em !important;
+      margin:15px;
+      padding:10px;
+      color:#FFFFFF;
+      height:28px;
+      width:28px;
+     transition:background 0.6s linear 0s, color 0.6s linear 0s;
+ }
+ 
+ .fa:hover {
+      background-color:#FF00FF;
+ }
+ 
+ .fa-facebook {background-color:#0C516E;}
+ .fa-twitter {background-color:#8CA6D9;}
