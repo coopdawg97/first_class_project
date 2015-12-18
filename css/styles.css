@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-     background-color:#F1F1F1;
+     background-:#F1F1F1;
      font-family:'Source Sans Pro', Trebuchet MS, sans-serif;
      /*font-family: 'Lora', serif;*/
      /*font-family: 'Lobster', cursive;*/
@@ -27,7 +27,7 @@ body {
 h1, h2, h3, h4 {
      margin:0px;
      padding:0px;
-     color:#8DC63F; /* THE COLOR IS GRANNY SMITH APPLE GREEN */
+     color:#0066ff;
      font-family: 'Lobster', serif;
 }
 
@@ -38,7 +38,7 @@ p {
 }
 
 b, strong {
-     color:#8DC63F;
+     color:#009900;
 }
 
 a {
@@ -48,7 +48,7 @@ a {
 }
 
 a:hover {
-     color:#FF7900;
+     color:#009900;
 }
 
 .mainBody {
@@ -69,7 +69,7 @@ header {
 }
 
 #logo a {
-     color:#FF7900; /* SECONDARY COLOR */
+     color:#009900; /* SECONDARY COLOR */
 }
 
 #logo a:hover {
@@ -110,19 +110,28 @@ BANNER STYLES BY ROGER AND DAMON 12.9.2015
  #banner {
       overflow:hidden;
       padding:100px 0px;
-      border-top:3px solid #8DC63F;
+      border-top:3px solid #009900;
       background-size:cover;
       background:url(../images/banner-home-image.jpg) no-repeat center center #FF7900;
  }
  
- /* #bannerAbout {*/
- /*     overflow:hidden;*/
- /*     padding:60px 0px;*/
- /*     border-top:3px solid #8DC63F;*/
- /*     background-size:200% 200%;*/
- /*     -webkit-background-size:100% 100%;*/
- /*     background:url() no-repeat center center #FF7900;*/
- /*}*/
+  #bannerAbout {
+      overflow:hidden;
+      padding:20px 0px;
+      border-top:3px solid #800000;
+      background-size:200% 200%;
+      -webkit-background-size:100% 100%;
+      background:url() no-repeat center center #ff0000;
+ }
+ 
+  #bannerContact {
+      overflow:hidden;
+      padding:0px 0px;
+      border-top:3px solid #800000;
+      background-size:200% 200%;
+      -webkit-background-size:100% 100%;
+      background:url() no-repeat center center #ff0000;
+ }
  
  .bannerText {
       color:#FFFFFF;
@@ -160,7 +169,7 @@ BANNER STYLES BY ROGER AND DAMON 12.9.2015
  }
  
  .column span {
-     background-color:#8DC63F;
+     background-color:#009900;
      color:#FFFFFF;
      display:block;
      font-size:1.75em;
@@ -179,13 +188,35 @@ BANNER STYLES BY ROGER AND DAMON 12.9.2015
 
 /* ========== STANDARD STYLES ========== */
  
+    #video {
+     position:relative;
+     width:90%;
+     padding-bottom:56.25%;
+     padding-top:30px;
+     height:0px;
+     overflow:hidden;
+     margin:0px auto;
+ }
+ 
+ #video iframe, #video embed {
+     position:absolute;
+     top:0px;
+     left:0px;
+     width:100%;
+     height:100%;
+ }
+ 
+ .audioFile {
+     width:350px;
+     margin:25px auto;
+         }
  
 /*------------- BUTTON STYLES ------------ */
  
 a.button {
      display:inline-block;
      padding:10px 18px;
-     background-color:#8DC63F;
+     background-color:#009900;
      text-transform:uppercase;
      font-weight:800;
      font-size:1.2em;
@@ -257,3 +288,44 @@ a.button:hover {
  
  .fa-facebook {background-color:#0C516E;}
  .fa-twitter {background-color:#8CA6D9;}
+ .fa-github {background-color:#000000;}
+ 
+ .CooperMelton {
+     margin:20px;
+ }
+ 
+ 
+ /*MOBILE WEBSITE STYLES*/
+ 
+/*TABLET STYLES*/
+ @media screen and (max-width: 768px) {
+         .mainBody {
+             width:90%;
+             margin:0px auto;
+             }
+             body{
+                 background-color:#000000;
+             }
+         }
+ 
+ /*MOBILE PHONE STYLES*/
+ @media screen and (max-width: 400px) {
+         .mainBody {
+             width:90%;
+             margin:0px auto;
+             }
+             body{
+                 background-color:#FF7900;
+             }
+             
+             h1{
+                 font-size:.75em;
+             }
+             
+             .bannerText {
+                 font-size:3em;
+                 color:#000000;
+             }
+         }
+         
+         
